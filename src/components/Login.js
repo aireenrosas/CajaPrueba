@@ -49,13 +49,17 @@ export default function Login() {
     }
   };
 
+  function handlePress() {
+    navigation.navigate('Details', { userID: data.userID });
+  }
+
   useEffect(() => {
     getLogin();
   }, []);
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('./cajatrujillo.png')}></Image>
+      <Image style={styles.image} source={require('.../cajatrujillo.png')}></Image>
       <Formik
         initialValues={details}
         onSubmit={values => console.log(values)}
