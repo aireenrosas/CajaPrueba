@@ -4,7 +4,7 @@ import { StyleSheet, Text, TextInput, View, Image, Button } from 'react-native';
 import { Formik } from 'formik';
 
 
-export default function App() {
+export default function Login() {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState();
 
